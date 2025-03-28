@@ -43,6 +43,7 @@ namespace E_Learning_API.Controllers
             return Ok(result);
         }
 
+        [Authorize]
         [HttpGet("GetLessonById/{id}")]
         public async Task<IActionResult> GetLessonbyIdAsync(int id)
         {
