@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>E_Learning_Core</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\Courses\**" />
+    <EmbeddedResource Remove="Features\Courses\**" />
+    <None Remove="Features\Courses\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0-preview1" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\E-Learning_Data\E-Learning_Data.csproj" />
+    <ProjectReference Include="..\E-Learning_Infrastructure\E-Learning_Infrastructure.csproj" />
+    <ProjectReference Include="..\E-Learning_Service\E-Learning_Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Answers\Queries\Handlers\" />
+    <Folder Include="Features\Roles\Queries\Handlers\" />
+    <Folder Include="Features\Roles\Queries\Models\" />
+    <Folder Include="Features\Roles\Queries\Results\" />
+    <Folder Include="Mapping\AnswerMapping\Queries\" />
+  </ItemGroup>
+
+</Project>
