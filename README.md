@@ -22,7 +22,7 @@ The system enables administrators, instructors, and students to interact efficie
 
 ### Notifications & Certificates  
 - Real-time notifications for **enrollments, course updates, and quiz results**.  
-- Auto-generated **certificates** for students upon course completion.  
+- Instructor-issued certificates for students upon course completion.  
 
 ### CQRS & Clean Architecture  
 - Implemented **CQRS** to separate read and write operations, improving performance.  
