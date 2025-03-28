@@ -24,4 +24,9 @@
     <ProjectReference Include="..\E-Learning_Infrastructure\E-Learning_Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\Images\" />
+    <Folder Include="wwwroot\uploads\videos\" />
+  </ItemGroup>
+
 </Project>
