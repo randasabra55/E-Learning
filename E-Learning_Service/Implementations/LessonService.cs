@@ -44,7 +44,7 @@ namespace E_Learning_Service.Implementations
                 await videoFile.CopyToAsync(stream);
             }
 
-            var fileUrl = $"{request.Scheme}://{request.Host}/uploads/Images/{uniqueFileName}";
+            var fileUrl = $"{request.Scheme}://{request.Host}/uploads/videos/{uniqueFileName}";
 
             lesson.VideoUrl = fileUrl;
             await lessonRepository.AddAsync(lesson);

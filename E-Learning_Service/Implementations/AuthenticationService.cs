@@ -174,7 +174,7 @@ namespace E_Learning_Service.Implementations
             {
                 var fromAddress = new MailAddress("randasabra27@gmail.com", "Your App Name");
                 var toAddress = new MailAddress(email);
-                const string fromPassword = "gzqz fpnp oixd ljdo";
+                const string fromPassword = "your app password";
                 const string subject = "Password Reset OTP";
                 string body = $"Your OTP Code is: {otp}. It will expire in 5 minutes.";
 
